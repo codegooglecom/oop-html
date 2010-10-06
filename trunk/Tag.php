@@ -2,10 +2,12 @@
 /**
  * Tag object
  * This is a quick html generating object.  It handles the generation of the html when echoed to string.
- * Now will parse out attrib strings instead of arrays
+ *
  * @todo add smart inline tag formatting support.  Currently supports one level of inline.
+ * @todo remove the need for empty tags, Tags should know whether or not they should be empty and the user should be able to dictate it.
+ * @todo add array parsing logic to construction.  Passing an array("id='value'", "class='value'") should work.
+ * @example ./examples/new_tag.php
  * @author tvanover
- * @version 0.2.1.1
  */
 class Tag{
 	const NO_MULTIPARENT = "NO_MULTIPARENT";

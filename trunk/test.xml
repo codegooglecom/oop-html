@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE body>
-<body>
-	<emptytest/>
-	<emptytest id="empty"/>
-	<emptytest class="some testing"/>
-	<intermingle>
-		Here is some text <span>in a span</span> and some more text<exclaim/>
-	</intermingle>
-</body>
