@@ -2,21 +2,13 @@
 $start = microtime();
 ini_set("display_errors" , "1");
 ini_set("error_reporting" , "6143");
-include("Tag.2.1.2.php");
-include("EmptyTag.2.1.0.php");
-include("TagParser.1.0.php");
+include("Tag.php");
+include("EmptyTag.php");
 
 echo "<pre>";
-
 //attribute string test
 echo Tag::Craft("h2", "Attribute String");
 echo htmlentities(new EmptyTag("p", "id='moo' class='Re Ani Mate' value=5"));
-
-//parser test
-echo "<h2>Parser Test</h2>";
-$parser = new TagParser("TagParser.ini");
-$tag = $parser->parse_file("simple.xml");
-echo htmlentities($tag);
 
 //construct test
 echo "<h2>Construct Test</h2>";
